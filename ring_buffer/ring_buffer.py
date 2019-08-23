@@ -21,9 +21,9 @@ class RingBuffer:
     # length of list full/capacity?
     if self.current >= len(self.storage)-1:
           self.current = 0
-        else:
+    else:
           # append an element overwriting oldest one
-      self.current += 1
+          self.current += 1
 
   def get(self):
     # return list of elements we appended to ring buffer
